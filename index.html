@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>lab 17.1</title>
+</head>
+
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="container-fluid fixed-top">
+      <div class="row bg-dark">
+        <div class="col-sm-4">
+          <div class="navbar navbar-expand">
+            <a href="#" class="navbar-brand">Carousel</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disable</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 ">
+          <form action="" class="d-flex justify-content-sm-end h-100 p-1 gap-2">
+            <input type="text" class="form-control w-50" placeholder="Search">
+            <button class="btn btn-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ------------------------------------------------------------------- -->
+  <!-- carousel -->
+  <section>
+    <div class="container-fluid p-0">
+      <div class="row h-100">
+
+        <div class="carousel slide h-100 carousel-fade" id="home-slide" data-ride="carousel">
+          <!-- add image -->
+          <div class="carousel-inner ">
+            <div class="carousel-item  active">
+              <img class="d-block w-100" src="img/img-1.jpg" alt="">
+              <div class="carousel-caption text-start">
+                <h1>Example headline</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, at.</p>
+                <p><a href="#" class="btn btn-success">Sign up today</a></p>
+              </div>
+            </div>
+            <div class="carousel-item  ">
+              <img class="d-block w-100" src="img/img-2.jpg" alt="">
+              <div class="carousel-caption text-start">
+                <h1>Example headline</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, at.</p>
+                <p><a href="#" class="btn btn-success">Sign up today</a></p>
+              </div>
+            </div>
+            <div class="carousel-item  ">
+              <img class="d-block w-100" src="img/img-3.JPG" alt="">
+              <div class="carousel-caption text-start">
+                <h1>Example headline</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, at.</p>
+                <p><a href="#" class="btn btn-success">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- add button to control image -->
+          <button class="carousel-control-prev" data-bs-target="#home-slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#home-slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <!-- add indicators -->
+          <div class="carousel-indicators">
+            <span class="active" data-bs-target="#home-slide" data-bs-slide-to="0"></span>
+            <span data-bs-target="#home-slide" data-bs-slide-to="1"></span>
+            <span data-bs-target="#home-slide" data-bs-slide-to="2"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------------------------------------------------- -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row " style="height: 30vh;">
+        <div class="col-md-12 h-100"></div>
+        <div class="col-md-12 d-flex justify-content-between">
+          <p>@ 2017 - 2021 Company, inc <a href="#">privacy</a><a href="#">terms</a></p>
+          <a href="#">Back to too</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ------------------------------------------------------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
